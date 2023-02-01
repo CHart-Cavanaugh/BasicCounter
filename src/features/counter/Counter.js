@@ -2,7 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import counterSlice, { increment, decrement, reset } from './counterSlice';
 
 const Counter = (props) => {
-    let count = useSelector(state => state.count);
+    let count = useSelector(state => state.counter.count);
     const dispatch = useDispatch();
     return (
         <div className='counter-container'>
