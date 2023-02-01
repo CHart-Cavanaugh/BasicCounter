@@ -1,7 +1,9 @@
+import Counter from './features/counter/Counter';
+
 const App = () => {
     return (
         <div id="app-container">
-            <h1>Hello World!</h1>
+            <Counter />
         </div>
     );
 }
