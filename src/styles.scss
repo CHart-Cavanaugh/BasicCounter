@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide");
+
+* {
+    box-sizing: border-box;
+}
+
+#app-container {
+    display: block;
+    border: 2px outset #BBB;
+    width: 300px;
+    margin: auto;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+}
+
+.counter-display {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background: rgb(0, 10, 0);
+    border-radius: 10px 10px 0 0;
+    color: rgba(0, 255, 0, .8);
+
+    h1 {
+        font-family: "Audiowide";
+        font-size: 2rem;
+        text-shadow: 0px 0px 3px rgba(0, 255, 0, .8);
+    }
+
+    h1:first-of-type {
+        letter-spacing: 5px;
+    }
+}
+
+.counter-btns {
+    display: block;
+    background: #888;
+    padding: 10px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+
+    button {
+        display: block;
+        width: 75%;
+        margin: 2px auto;
+        font-weight: bold;
+        padding: 10px;
+        border-width: 1px;
+        border-style: inset;
+        border-color: #4F0000;
+        border-radius: 3px;
+        background: #CF0000;
+    }
+
+    button:hover {
+        background: rgba(255, 0, 0, 1)
+    }
+
+    button:active {
+        background: #A30000
+    }
+
+}
