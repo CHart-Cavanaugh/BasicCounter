@@ -2,14 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Adamina');
 
 
+/* UNCATEGORIZED VARIABLES */
+$counter-border-radius: 10px;
 
+
+
+/* COUNTER COLORS */
 $app-background: rgba(0, 132, 255, 0.503);
 
-
-
-$counter-border-radius: 10px;
 $counter-display-color: rgba(0, 255, 0, .8);
-
 
 $counter-btn-border-color: #4F0000;
 $counter-btn-bg: #CF0000;
@@ -17,6 +18,8 @@ $counter-btn-hover-bg: rgba(255, 0, 0, 1);
 $counter-btn-active-bg: #A30000;
 
 
+
+/* PAGE SETUP */
 
 * {
     box-sizing: border-box;
@@ -32,6 +35,10 @@ body {
     padding-top: 100px;
     width: 100vw;
 }
+
+
+
+/* COUNTER COMPONENT STYLE */
 
 .counter-container {
     border-radius: $counter-border-radius;
