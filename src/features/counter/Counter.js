@@ -12,16 +12,16 @@ const Counter = (props) => {
             </div>
             <div className='counter-btns'>
                 <button
-                    className='increment-btn'
-                    onClick={() => dispatch(increment())}
-                >
-                    Increment
-                </button>
-                <button
                     className='decrement-btn'
                     onClick={() => dispatch(decrement())}
                 >
-                    Decrement
+                    -
+                </button>
+                <button
+                    className='increment-btn'
+                    onClick={() => dispatch(increment())}
+                >
+                    +
                 </button>
                 <button
                     className='reset-btn'

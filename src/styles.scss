@@ -49,8 +49,11 @@ $counter-btn-active-bg: #A30000;
 .counter-btns {
     background: #888;
     border-radius: 0 0 calc($counter-border-radius - 2px) calc($counter-border-radius - 2px);
-    display: block;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 2px;
+    justify-content: center;
+    padding: 15px 10px;
     width: 100%;
 
     button {
@@ -59,12 +62,20 @@ $counter-btn-active-bg: #A30000;
         border: 1px inset $counter-btn-border-color;
         display: block;
         font-family: "Adamina";
-        font-size: 1.5em;
         font-weight: 600;
         letter-spacing: 1px;
-        margin: 2px auto;
         padding: 10px;
-        width: 75%;
+    }
+
+    .increment-btn,
+    .decrement-btn {
+        width: calc(75%/2);
+        font-size: 2em;
+    }
+
+    .reset-btn {
+        width: calc(75% + 1px);
+        font-size: 1.5em;
     }
 
     button:hover {
