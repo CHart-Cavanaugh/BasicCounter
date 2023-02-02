@@ -1,30 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url('https://fonts.googleapis.com/css?family=Adamina');
+
+
+
+$counter-border-radius: 10px;
+$counter-display-color: rgba(0, 255, 0, .8);
+
+
+$counter-btn-border-color: #4F0000;
+$counter-btn-bg: #CF0000;
+$counter-btn-hover-bg: rgba(255, 0, 0, 1);
+$counter-btn-active-bg: #A30000;
+
+
 
 * {
     box-sizing: border-box;
 }
 
 .counter-container {
-    display: block;
+    border-radius: $counter-border-radius;
     border: 2px outset #BBB;
-    width: 300px;
-    margin: auto;
     box-shadow: 10px 10px 20px black;
-    border-radius: 10px;
+    display: block;
+    margin: auto;
+    width: 300px;
 }
 
 .counter-display {
+    background: rgb(0, 10, 0);
+    border-radius: calc($counter-border-radius - 2px) calc($counter-border-radius - 2px) 0 0;
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
-    background: rgb(0, 10, 0);
-    border-radius: 10px 10px 0 0;
-    color: rgba(0, 255, 0, .8);
 
     h1 {
+        color: $counter-display-color;
         font-family: "Audiowide";
         font-size: 2rem;
-        text-shadow: 0px 0px 3px rgba(0, 255, 0, .8);
+        text-shadow: 0px 0px 3px $counter-display-color;
     }
 
     h1:first-of-type {
@@ -33,31 +47,32 @@
 }
 
 .counter-btns {
-    display: block;
     background: #888;
+    border-radius: 0 0 calc($counter-border-radius - 2px) calc($counter-border-radius - 2px);
+    display: block;
     padding: 10px;
     width: 100%;
-    border-radius: 0 0 8px 8px;
 
     button {
-        display: block;
-        width: 75%;
-        margin: 2px auto;
-        font-weight: bold;
-        padding: 10px;
-        border-width: 1px;
-        border-style: inset;
-        border-color: #4F0000;
+        background: $counter-btn-bg;
         border-radius: 3px;
-        background: #CF0000;
+        border: 1px inset $counter-btn-border-color;
+        display: block;
+        font-family: "Adamina";
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 2px auto;
+        padding: 10px;
+        width: 75%;
     }
 
     button:hover {
-        background: rgba(255, 0, 0, 1)
+        background: $counter-btn-hover-bg;
     }
 
     button:active {
-        background: #A30000
+        background: $counter-btn-active-bg;
     }
 
 }
